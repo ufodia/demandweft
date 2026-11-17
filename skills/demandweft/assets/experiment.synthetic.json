@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "data_kind": "synthetic",
+  "control": {"n": 1000, "successes": 100},
+  "treatment": {"n": 1000, "successes": 200},
+  "design": {
+    "assignment": "randomized",
+    "allocation_model": "independent_bernoulli",
+    "unit": "person",
+    "independence": "independent",
+    "interference": "absent",
+    "preregistered": true,
+    "fixed_horizon": true,
+    "horizon_status": "complete",
+    "outcome_maturity": "mature",
+    "data_quality": "clear",
+    "minimum_per_arm": 1000,
+    "expected_treatment_allocation": 0.5
+  },
+  "minimum_worthwhile_absolute_lift": 0.02,
+  "economics": {
+    "currency": "TRY",
+    "contribution_per_success": 100,
+    "extra_cost_for_treatment_sample": 500
+  }
+}

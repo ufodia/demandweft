@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640" role="img" aria-labelledby="title desc">
+  <title id="title">Demandweft — turn a buying question into useful proof</title>
+  <desc id="desc">A visual workflow: one customer question passes through six proof mechanisms, then customer value, business outcomes, and optional recipient value are measured separately.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#355047" stroke-opacity=".35" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#18352E"/>
+      <stop offset="1" stop-color="#10231F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="640" rx="28" fill="#10231F"/>
+  <rect width="1440" height="640" rx="28" fill="url(#grid)"/>
+  <path d="M0 98H1440" stroke="#446359" stroke-opacity=".6"/>
+  <text x="64" y="62" fill="#D8F36A" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="3">DEMANDWEFT / THE PROOF WEAVE</text>
+  <text x="1376" y="62" fill="#9BB2A5" font-family="Segoe UI,Arial,sans-serif" font-size="13" text-anchor="end" letter-spacing="2">CUSTOMER QUESTION → USEFUL RESULT → LEARNING</text>
+
+  <text x="72" y="190" fill="#F5EFE1" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">Make the</text>
+  <text x="72" y="266" fill="#F5EFE1" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">decision</text>
+  <text x="72" y="342" fill="#D8F36A" font-family="Segoe UI,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">tangible.</text>
+  <path d="M74 386H430" stroke="#F5A27B" stroke-width="3"/>
+  <text x="74" y="430" fill="#CAD8CA" font-family="Segoe UI,Arial,sans-serif" font-size="20">Build something a buyer can use</text>
+  <text x="74" y="461" fill="#CAD8CA" font-family="Segoe UI,Arial,sans-serif" font-size="20">before you ask for the sale.</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">
+    <rect x="74" y="520" width="132" height="36" rx="18" fill="#233D35" stroke="#496C5D"/>
+    <text x="140" y="543" text-anchor="middle" fill="#D8F36A">EVIDENCE FIRST</text>
+    <rect x="216" y="520" width="148" height="36" rx="18" fill="#233D35" stroke="#496C5D"/>
+    <text x="290" y="543" text-anchor="middle" fill="#F5EFE1">NON-FIT INCLUDED</text>
+    <rect x="374" y="520" width="156" height="36" rx="18" fill="#233D35" stroke="#496C5D"/>
+    <text x="452" y="543" text-anchor="middle" fill="#F5A27B">NO VIRALITY CLAIMS</text>
+  </g>
+
+  <rect x="596" y="128" width="784" height="456" rx="24" fill="url(#panel)" stroke="#416053" stroke-width="1.5"/>
+  <text x="632" y="170" fill="#AFC6B8" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">ONE BUYING QUESTION. ONE USEFUL PROOF.</text>
+
+  <rect x="632" y="202" width="190" height="112" rx="16" fill="#F5EFE1"/>
+  <text x="656" y="233" fill="#607267" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">START WITH</text>
+  <text x="656" y="268" fill="#152824" font-family="Georgia,serif" font-size="24" font-weight="700">“Will it fit</text>
+  <text x="656" y="294" fill="#152824" font-family="Georgia,serif" font-size="24" font-weight="700">my situation?”</text>
+
+  <path d="M822 258H888" fill="none" stroke="#D8F36A" stroke-width="2.5"/>
+  <path d="m880 250 9 8-9 8" fill="none" stroke="#D8F36A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="900" y="202" width="206" height="112" rx="16" fill="#223F36" stroke="#547368"/>
+  <text x="922" y="232" fill="#D8F36A" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">CHOOSE A MECHANISM</text>
+  <text x="922" y="263" fill="#F5EFE1" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">Fit · Sample · Compare</text>
+  <text x="922" y="290" fill="#B7C9BE" font-family="Segoe UI,Arial,sans-serif" font-size="16">Switch · Align · Adapt</text>
+
+  <path d="M1106 258H1168" fill="none" stroke="#F5A27B" stroke-width="2.5"/>
+  <path d="m1160 250 9 8-9 8" fill="none" stroke="#F5A27B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1180" y="202" width="164" height="112" rx="16" fill="#D8F36A"/>
+  <text x="1202" y="235" fill="#53654A" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">LEAVE WITH</text>
+  <text x="1202" y="270" fill="#152824" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">A useful</text>
+  <text x="1202" y="295" fill="#152824" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">answer.</text>
+
+  <path d="M1262 314V364H735V394M1262 364H987V394M1262 364H1235V394" fill="none" stroke="#628274" stroke-width="1.5" stroke-dasharray="5 6"/>
+  <circle cx="735" cy="364" r="4" fill="#D8F36A"/>
+  <circle cx="987" cy="364" r="4" fill="#F5A27B"/>
+  <circle cx="1235" cy="364" r="4" fill="#9FC6DC"/>
+
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="632" y="394" width="206" height="116" rx="16" fill="#18372F" stroke="#A5C666"/>
+    <rect x="632" y="394" width="206" height="5" rx="2.5" fill="#D8F36A"/>
+    <text x="654" y="432" fill="#D8F36A" font-size="11" font-weight="700" letter-spacing="1.4">01 / CUSTOMER</text>
+    <text x="654" y="466" fill="#F5EFE1" font-size="19" font-weight="700">Did it help?</text>
+    <text x="654" y="490" fill="#AFC6B8" font-size="13">Useful job completed</text>
+
+    <rect x="884" y="394" width="206" height="116" rx="16" fill="#342C26" stroke="#BA8063"/>
+    <rect x="884" y="394" width="206" height="5" rx="2.5" fill="#F5A27B"/>
+    <text x="906" y="432" fill="#F5A27B" font-size="11" font-weight="700" letter-spacing="1.4">02 / BUSINESS</text>
+    <text x="906" y="466" fill="#F5EFE1" font-size="19" font-weight="700">Did it pay?</text>
+    <text x="906" y="490" fill="#CBBAB0" font-size="13">Qualified outcome + cost</text>
+
+    <rect x="1136" y="394" width="208" height="116" rx="16" fill="#22313A" stroke="#6C96A7"/>
+    <rect x="1136" y="394" width="208" height="5" rx="2.5" fill="#9FC6DC"/>
+    <text x="1158" y="432" fill="#9FC6DC" font-size="11" font-weight="700" letter-spacing="1.4">03 / RECIPIENT</text>
+    <text x="1158" y="466" fill="#F5EFE1" font-size="19" font-weight="700">Was it shared?</text>
+    <text x="1158" y="490" fill="#B7C7CE" font-size="13">Own value, if enabled</text>
+  </g>
+  <path d="M632 540H1344" stroke="#446359" stroke-opacity=".8"/>
+  <text x="988" y="563" fill="#C7D6C9" font-family="Segoe UI,Arial,sans-serif" font-size="14" text-anchor="middle">Three signals. Three records. No invented success score.</text>
+</svg>
