@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "gatherleaf-fictional-demo",
+  "status": "ready_for_review",
+  "demo_only": true,
+  "explicitly_demo": true,
+  "evidence": [
+    {
+      "id": "fictional-host-scenario",
+      "type": "synthetic",
+      "kind": "customer",
+      "source": "This file: fictional worked scenario, created only to illustrate the contract",
+      "scope": "No interviews, customer observations, product results, or market validation",
+      "summary": "A fictional host plans a small community lunch and is unsure which guest constraints still need an answer."
+    },
+    {
+      "id": "fictional-proof-text",
+      "type": "synthetic",
+      "kind": "demonstration",
+      "source": "This file: experience.deliverable",
+      "scope": "Completed illustrative text experience; no running product or measured effectiveness is claimed",
+      "summary": "A useful blank planning checklist and an explicit alternative for events outside the demonstration's scope."
+    }
+  ],
+  "buyer": {
+    "segment": "Hypothesis: volunteer hosts planning a small community lunch",
+    "decision_question": "Can I resolve the missing constraints before committing to an event plan?",
+    "barrier": "Hypothesis: the host cannot distinguish confirmed arrangements from unanswered guest needs.",
+    "status": "hypothesis",
+    "evidence_ids": ["fictional-host-scenario"]
+  },
+  "experience": {
+    "deliverable": "DEMONSTRATION ONLY — Gatherleaf is fictional.\nA usable planning worksheet:\n1. Write the proposed date, venue and attendance range. Mark each confirmed or unknown.\n2. List unresolved access, food and timing requirements without collecting guest names or medical details.\n3. Choose one owner and one deadline for each unanswered item.\n4. Copy this blank request if useful: 'For the proposed lunch, which timing or access requirement should the organizer account for? Please do not include private health details.'\n5. Save or print the worksheet immediately; sharing is optional.\nNOT A FIT: If you need ticket sales, regulated catering, emergency planning or large-event operations, use an appropriate event professional or specialist tool. You may still keep the blank worksheet; it makes no suitability or safety assurance.",
+    "personal_utility": "Intended benefit: leave with a concrete list of unanswered planning constraints and owners, without signup or sharing.",
+    "non_fit_outcome": "Keep the blank worksheet and receive the specialist-tool/professional route stated in the deliverable; no forced signup or paid recommendation.",
+    "implementation_state": "built",
+    "verification_evidence_ids": []
+  },
+  "claims": [
+    {
+      "id": "illustrative-worksheet",
+      "text": "Fictional demonstration: organize unresolved event-planning questions into a worksheet you can keep.",
+      "category": "capability",
+      "status": "illustrative",
+      "evidence_ids": ["fictional-proof-text"]
+    }
+  ],
+  "public": {
+    "claim_ids": ["illustrative-worksheet"]
+  },
+  "propagation": {
+    "mode": "coordinate",
+    "forced_sharing": false,
+    "recipient_value": "Intended benefit: a guest can clarify a relevant requirement without installing an app or supplying unrelated information.",
+    "sender_value": "Intended benefit: the organizer can fill an unanswered planning item.",
+    "privacy_scope": "Optional copyable request only. Never include the organizer's complete worksheet, guest names, private health details or other guests' responses. No messages are sent by this contract."
+  },
+  "success": {
+    "user_value": {
+      "metric": "plans_with_unknowns_and_owners_identified",
+      "success_definition": "In a future observed pilot, record whether the host leaves with an unknown-item list and assigns at least one owner; do not infer this from clicks."
+    },
+    "business_outcome": {
+      "metric": "eligible_hosts_requesting_a_product_trial",
+      "success_definition": "In a future pilot, separately count eligible hosts who voluntarily request a product trial after receiving their worksheet; record the eligible-host denominator."
+    },
+    "propagation_outcome": {
+      "metric": "optional_requests_returning_a_useful_requirement",
+      "success_definition": "For hosts who choose to share, separately record whether a recipient voluntarily returns a relevant requirement; do not treat sends as recipient value."
+    }
+  },
+  "budget": {
+    "currency": "USD",
+    "max_cash": 0,
+    "max_hours": 2
+  }
+}

@@ -1,0 +1,9 @@
+interface:
+  display_name: "Demandweft"
+  short_description: "Build useful proof and measure real customer outcomes"
+  default_prompt: "Use $demandweft to build a useful proof experience and assess customer, business, and recipient outcomes separately."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D8F36A"
+policy:
+  allow_implicit_invocation: true
