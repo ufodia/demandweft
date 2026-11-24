@@ -45,4 +45,4 @@ Before exposure, exercise one ordinary completion, a genuine non-fit, an incompl
 
 Keep test observations distinguishable from customer records. Confirm resets, retries, and repeat visits do not silently multiply the declared denominator. Verify that copying or downloading a result does not submit a booking, send an invitation, or count as a sale.
 
-Record checks actually executed and their limits in `assets/learning-record.template.md`. A static code review cannot establish rendered browser behavior, delivered messages, customer utility, or instrumented production collection.
+Record checks actually executed and their limits in the project's learning record. Use the [bundled template](../assets/learning-record.template.md) as a starting point and keep the completed record in an authorized project or output location. A static code review cannot establish rendered browser behavior, delivered messages, customer utility, or instrumented production collection.

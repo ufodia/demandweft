@@ -69,25 +69,25 @@ Read [instrumentation.md](references/instrumentation.md) when adding or defining
 
 ### 6. Precommit and interpret learning
 
-Read [measurement.md](references/measurement.md) before setting decision rules or reading outcomes. Before exposure, record one primary business outcome, denominator, guardrails, assignment, eligibility, exclusions, comparison limits, minimum worthwhile effect, economics, sample/horizon, outcome maturity, budget, and bounded follow-up/revise/stop/inconclusive conditions. Preserve the plan and negative results in `assets/learning-record.template.md`. Do not repeatedly inspect fixed-horizon results until one looks favorable.
+Read [measurement.md](references/measurement.md) before setting decision rules or reading outcomes. Before exposure, record one primary business outcome, denominator, guardrails, assignment, eligibility, exclusions, comparison limits, minimum worthwhile effect, economics, sample/horizon, outcome maturity, budget, and bounded follow-up/revise/stop/inconclusive conditions. Copy the [learning record template](assets/learning-record.template.md) to an authorized project or output location to preserve the plan and all results. If file writes are outside scope, provide the learning record inline. Do not repeatedly inspect fixed-horizon results until one looks favorable.
 
-Keep three records: customer usefulness; the qualified business outcome; and recipient completion/re-sharing, if enabled. Report counts, missing data, windows, economics, and uncertainty. Do not combine them into a single score. For a compatible two-arm binary result only, read [experiment-math.md](references/experiment-math.md) and use `scripts/experiment_math.py`. Its declarations are not audited. Use a suitable method or scoped descriptive evidence for clusters, paired, sequential, multi-arm, or non-binary work. Synthetic examples always remain synthetic.
+Keep separate records for customer usefulness and the qualified business outcome. If sharing is enabled, also record recipient completion and any re-sharing. Report counts, missing data, windows, economics, and uncertainty. Do not combine them into a single score. For a compatible two-arm binary result only, read [experiment-math.md](references/experiment-math.md) and use `scripts/experiment_math.py`. Its declarations are not audited. Use a suitable method or scoped descriptive evidence for clusters, paired, sequential, multi-arm, or non-binary work. Synthetic examples always remain synthetic.
 
 Use “supports a bounded follow-up under these assumptions,” “inconclusive,” or “revise/stop” according to the evidence; do not convert an arithmetic label into permission to scale or spend.
 
 ## Deliver and retain learning
 
-Lead with the usable artifact and recommendation. State what was built, actually checked, published, and still pending; the supporting evidence and unknowns; three separate outcome records; variable costs and capacity; and the next bounded decision. Preserve earlier assumptions and unfavorable evidence in a dated learning record.
+Lead with the usable artifact and recommendation. State what was built, checked, or published, and what is pending. Give the evidence and remaining unknowns for customer usefulness, the business outcome, and recipient outcomes when sharing was enabled. Include variable costs, capacity, and the next bounded decision. Preserve earlier assumptions and unfavorable evidence in the dated learning record.
 
 For uniqueness requests, read [novelty-and-sources.md](references/novelty-and-sources.md), refresh relevant comparisons, and describe the precise combination in scope. No search results do not prove a world first, trademark availability, or exclusivity.
 
 ## Helper commands
 
-Use Python 3.9+ and the standard library; no third-party package is required. Quote paths that contain spaces. The helpers read local UTF-8 JSON (optionally with a UTF-8 BOM), emit JSON, and do not modify inputs, access the network, publish, or spend.
+The helpers use Python 3.9+ and the standard library. Substitute the actual directory containing this `SKILL.md` for `<skill-directory>` and the path to your JSON file for `<contract-file>` or `<experiment-file>`. Keep the quotes around paths. The helpers read local UTF-8 JSON (optionally with a UTF-8 BOM), emit JSON, and do not modify inputs or access the network.
 
 ```sh
-python3 -B scripts/validate_contract.py /absolute/path/contract.json
-python3 -B scripts/experiment_math.py /absolute/path/experiment.json
+python3 -B "<skill-directory>/scripts/validate_contract.py" "<contract-file>"
+python3 -B "<skill-directory>/scripts/experiment_math.py" "<experiment-file>"
 ```
 
 On Windows with the Python launcher, use `py -3 -B`. The contract validator exits `0` for a structurally ready-for-review contract, `1` for a draft, and `2` for invalid input. The arithmetic helper exits `0` when analyzed, including synthetic, blocked, and inconclusive results, and `2` for invalid input.

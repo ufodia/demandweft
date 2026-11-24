@@ -1,0 +1,2 @@
+# Keep release checksums stable across checkout platforms.
+* text=auto eol=lf
