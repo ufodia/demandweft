@@ -134,6 +134,8 @@ The contract fixture is fictional. The experiment fixture is synthetic and must 
 
 `verify_release.py` checks the SHA-256 entries in `CHECKSUMS.sha256` and reports regular release files missing from the manifest. Exit `0` means the listed bytes match and the release file set is covered; `1` means a listed file is missing or changed; `2` means the manifest or command is invalid/incomplete. The manifest intentionally does not hash itself. An integrity pass does not prove provenance or safety.
 
+For a Windows clone created before the repository pinned LF line endings, use a fresh checkout when verifying the package. A Git pull can leave unchanged files with their previous CRLF line endings.
+
 ## Read the right detail
 
 | If you are… | Read… |
