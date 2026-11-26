@@ -20,6 +20,8 @@ Treat **customer usefulness**, **commercial value**, and **propagation** as sepa
 
 For an audit-only or direction-only request, do not implement unless asked. For an authorized build request, a plan, list of tactics, or empty wireframe is not the finished artifact.
 
+For a bounded task such as improving one objection response, deliver the requested proof or copy with its evidence and limits. Use the steps below that affect the deliverable. Define a pilot, add measurement, or prepare distribution only when the task calls for it. When assessing results, recover the original decision rules before interpreting the data.
+
 ## Preserve these boundaries
 
 - Reuse supplied context and existing authorization. Ask at most one focused question when missing information changes the deliverable; proceed with reversible preparation and label assumptions.
@@ -73,7 +75,7 @@ Read [measurement.md](references/measurement.md) before setting decision rules o
 
 Keep separate records for customer usefulness and the qualified business outcome. If sharing is enabled, also record recipient completion and any re-sharing. Report counts, missing data, windows, economics, and uncertainty. Do not combine them into a single score. For a compatible two-arm binary result only, read [experiment-math.md](references/experiment-math.md) and use `scripts/experiment_math.py`. Its declarations are not audited. Use a suitable method or scoped descriptive evidence for clusters, paired, sequential, multi-arm, or non-binary work. Synthetic examples always remain synthetic.
 
-Use “supports a bounded follow-up under these assumptions,” “inconclusive,” or “revise/stop” according to the evidence; do not convert an arithmetic label into permission to scale or spend.
+Apply the predeclared guardrails before recommending an action. A verified stopping trigger overrides a favorable business metric. If a required guardrail cannot be evaluated, report that gap and keep the follow-up decision unresolved. Do not convert an arithmetic label into permission to scale or spend.
 
 ## Deliver and retain learning
 

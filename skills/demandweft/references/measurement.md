@@ -16,6 +16,8 @@ Record the experience/offer version, audience, channel, hypothesis, one primary 
 
 Do not choose a new primary outcome after observing an unfavorable result. Treat material changes as a new version. Preserve negative and inconclusive evidence.
 
+Define what triggers each guardrail, where and when it will be observed, and what to do if its data are missing. Identify stopping conditions separately from signals that only call for investigation.
+
 ## Match the method
 
 - **Demonstration:** verify function using fixtures or agent walkthroughs. Do not call synthetic participants real customers.
@@ -57,6 +59,8 @@ Use cohorts and finite observation windows. Observe recipient utility before opt
 A new-recipient/original-participant ratio is a scoped descriptive ratio. Do not multiply guessed rates into a claimed viral coefficient or extrapolate an early chain into perpetual growth. Shared groups can violate simple A/B independence.
 
 ## Decision language
+
+Recover the plan for the tested version. Compare each guardrail with its own evidence before combining results into a recommendation. If a stopping condition was met, follow the planned stop action even when the primary outcome improved. If an essential guardrail is unmeasured or its observation window is incomplete, keep the decision inconclusive unless an independently verified stopping condition already applies. Report the business finding and the guardrail outcome separately.
 
 - Label fabricated fixtures synthetic even when arithmetic is correct.
 - Label observational comparisons associations.

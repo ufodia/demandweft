@@ -282,6 +282,7 @@ def analyze(data):
             "A passed allocation screen does not prove valid randomization or exclude missingness and measurement bias.",
             "Contribution calculations assume a common fixed contribution per success and known incremental costs at treatment sample size.",
             "Cost/margin uncertainty, refunds, long-term effects, and transport to other audiences are not estimated.",
+            "The calculator does not evaluate experiment guardrails; apply the recorded stopping conditions before acting on this label.",
             "No label authorizes publishing, spending, scaling, or a causal or commercial guarantee.",
         ],
     }

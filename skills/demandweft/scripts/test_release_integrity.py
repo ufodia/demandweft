@@ -1,5 +1,7 @@
 import hashlib
 import json
+import os
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -105,6 +107,27 @@ class ReleaseIntegrityTests(unittest.TestCase):
         manifest = RELEASE_ROOT / "CHECKSUMS.sha256"
         code, report = verify_manifest(manifest)
         self.assertEqual(code, 0, json.dumps(report, indent=2))
+
+    def test_cli_reports_unlisted_unicode_paths_with_legacy_output_encoding(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            payload = b"listed file"
+            (root / "listed.txt").write_bytes(payload)
+            unlisted = "\u6e2c\u8a66.txt"
+            (root / unlisted).write_bytes(b"unlisted file")
+            manifest = write_manifest(root, f"{hashlib.sha256(payload).hexdigest()}  listed.txt")
+
+            result = subprocess.run(
+                [sys.executable, "-B", str(RELEASE_ROOT / "tools" / "verify_release.py"), str(manifest)],
+                capture_output=True,
+                env={**os.environ, "PYTHONIOENCODING": "cp1254"},
+            )
+
+            self.assertEqual(result.returncode, 2, result.stderr)
+            self.assertEqual(result.stderr, b"")
+            report = json.loads(result.stdout)
+            self.assertEqual(report["status"], "invalid_manifest")
+            self.assertEqual(report["unlisted_files"], [unlisted])
 
 
 if __name__ == "__main__":

@@ -91,6 +91,8 @@ Conditions for an inferential label are all declared: observed data, random assi
 
 The output's qualified `causal_status` is `conditional_on_declared_assumptions` only when all design conditions pass. This is not an independent causal audit. A bounded follow-up label is a recommendation for a separately planned limited next experiment; it does not authorize rollout or spending. Multiple metrics, selected subgroups, repeated looks, optional stopping, network effects and clusters need appropriate designs and adjusted methods. Changing the horizon or minimum after seeing a result invalidates the declarations; do not simply add people until this command prints a preferred label. Approximate 95% confidence intervals do not assign a 95% probability to this specific effect being inside the reported range.
 
+The helper has no inputs for guardrails, customer usefulness, or recipient outcomes. An arithmetic recommendation covers the primary outcome and supplied economics only. Apply the recorded guardrails and evaluate their evidence before deciding whether to follow up.
+
 ## Verification
 
 Run `python3 -B -m unittest discover -s scripts -p 'test_experiment_math.py' -v`. Tests cover numerical boundaries (including exact zero- and all-success endpoints at the maximum count), unrepresentable break-even ratios, zero events, sign reversal, unequal allocation and contribution normalization, missing economics, synthetic precedence, design failures, malformed/duplicate JSON, input immutability and deterministic CLI exit behavior. If SciPy is already installed, an optional offline cross-check compares Wilson limits and SRM p-values with its independent implementation. SciPy is not required for production use and is never installed by this tool.

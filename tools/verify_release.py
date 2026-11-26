@@ -141,7 +141,7 @@ def main(argv=None) -> int:
     else:
         default_manifest = Path(__file__).resolve().parents[1] / "CHECKSUMS.sha256"
         code, report = verify_manifest(Path(args[0]) if args else default_manifest)
-    print(json.dumps(report, ensure_ascii=False, allow_nan=False, sort_keys=True, indent=2))
+    print(json.dumps(report, allow_nan=False, sort_keys=True, indent=2))
     return code
 
 
